@@ -27,7 +27,7 @@ require([
     // OAuth certification process
     // Required to access secure content from AGOL
     const info = new OAuthInfo({
-        appId: "",
+        appId: "C0jh49amTXnUkzz5",
         portalUrl: "http://cobecconsulting.maps.arcgis.com",
         authNamespace: "portal_oauth_inline",
         flowtype: "auto",
