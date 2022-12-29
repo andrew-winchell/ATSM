@@ -41,7 +41,36 @@ require([
             console.log("Sign In Successful.")
         });
     
-    
+    // Construct a new web scene using satellite imagery and elevation layer
+    const map = new WebScene({
+        basemap: "satellite",
+        ground: "world-elevation"
+    });
+
+    const scene = new SceneView({
+        container: "viewDiv",
+        map: map,
+        camera: {
+            position: {
+                x: -97,
+                y: 10,
+                z: 3500000
+            },
+            tilt: 35
+        }
+    });
+
+    // Allow popup to be docked
+    scene.popup.dockEnabled = true;
+
+    // Options for docking popup
+    scene.popup.dockOptions = {
+        buttonEnabled: false,   //do not allow user to decide on when docking occurs
+        breakpoint: {   //set when screen is smaller than w*h, popup will automatically dock
+            width: 5000,    //default to always dock
+            height: 5000
+        }
+    };
 
 
 })
