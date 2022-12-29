@@ -28,11 +28,11 @@ html, body {
 }
 
 .main-content_large {
-    width: 90%;
+    width: 100%;
 }
   
 .sidebar_small {
-    width: 10%;
+    width: 0%;
 }
   
 #sidebar-btn {
