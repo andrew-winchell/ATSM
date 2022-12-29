@@ -4,9 +4,9 @@ html, body {
 }
 
 .grid-container {
-    width: 90vw;
-    margin: 0 auto;
-    height: 90vh;
+    width: 100vw;
+    margin: 50px auto auto auto;
+    height: calc(100vh - 50px);
     display: flex;
     border: 2px solid rgba(0,0,0,0.4);
     transition: 1s ease;
